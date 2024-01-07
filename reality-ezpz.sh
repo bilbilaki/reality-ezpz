@@ -38,32 +38,32 @@ HEIGHT=30
 WIDTH=60
 CHOICE_HEIGHT=20
 
-image[xray]="teddysun/xray:1.8.4"
-image[sing-box]="gzxhwq/sing-box:v1.6.5"
+image[xray]="teddysun/xray:1.8.6"
+image[sing-box]="gzxhwq/sing-box:v1.8.0"
 image[nginx]="nginx:1.24.0"
 image[certbot]="certbot/certbot:v2.6.0"
 image[haproxy]="haproxy:2.8.0"
 image[python]="python:3.11-alpine"
 image[wgcf]="virb3/wgcf:2.2.18"
 
-defaults[transport]=tcp
-defaults[domain]=www.google.com
-defaults[port]=443
+defaults[transport]=udp
+defaults[domain]=makimasun.inosuke.ir
+defaults[port]=123
 defaults[safenet]=OFF
 defaults[warp]=OFF
-defaults[warp_license]=""
-defaults[warp_private_key]=""
-defaults[warp_token]=""
-defaults[warp_id]=""
-defaults[warp_client_id]=""
-defaults[warp_interface_ipv4]=""
-defaults[warp_interface_ipv6]=""
+defaults[warp_license]="3Fw486yS-WG682pO0-046uP7rE"
+defaults[warp_private_key]="8EAMlZjW4hOopJzM23eFMWih/u7qNm0XWriJP+I8dHQ="
+defaults[warp_token]="bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+defaults[warp_id]="93e3b55d9d86f5719f71d7070e23224c01afe2be3a9e966e201bc6e36aca4611"
+defaults[warp_client_id]="49df35bf-e2a1-4457-96b3-5ab83d8b0ddf"
+defaults[warp_interface_ipv4]="172.16.0.2/32"
+defaults[warp_interface_ipv6]=" 2606:4700:110:8c6f:a948:72b6:1329:6cbb/128"
 defaults[core]=sing-box
-defaults[security]=reality
+defaults[security]=Tuic
 defaults[server]=$(curl -fsSL --ipv4 https://cloudflare.com/cdn-cgi/trace | grep ip | cut -d '=' -f2)
-defaults[tgbot]=OFF
-defaults[tgbot_token]=""
-defaults[tgbot_admins]=""
+defaults[tgbot]=ON
+defaults[tgbot_token]="6345213936:AAFf7swmpvredssTbhT-xuAKoPtUH7Mzyxk"
+defaults[tgbot_admins]="Inosuke_Himeno"
 
 config_items=(
   "core"
