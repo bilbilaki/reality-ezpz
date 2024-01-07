@@ -46,9 +46,9 @@ image[haproxy]="haproxy:2.8.0"
 image[python]="python:3.11-alpine"
 image[wgcf]="virb3/wgcf:2.2.18"
 
-defaults[transport]=udp
+defaults[transport]=tuic
 defaults[domain]=makimasun.inosuke.ir
-defaults[port]=123
+defaults[port]=143
 defaults[safenet]=OFF
 defaults[warp]=OFF
 defaults[warp_license]="3Fw486yS-WG682pO0-046uP7rE"
@@ -59,10 +59,10 @@ defaults[warp_client_id]="49df35bf-e2a1-4457-96b3-5ab83d8b0ddf"
 defaults[warp_interface_ipv4]="172.16.0.2/32"
 defaults[warp_interface_ipv6]=" 2606:4700:110:8c6f:a948:72b6:1329:6cbb/128"
 defaults[core]=sing-box
-defaults[security]=Tuic
+defaults[security]=selfsigned
 defaults[server]=$(curl -fsSL --ipv4 https://cloudflare.com/cdn-cgi/trace | grep ip | cut -d '=' -f2)
 defaults[tgbot]=ON
-defaults[tgbot_token]="6345213936:AAFf7swmpvredssTbhT-xuAKoPtUH7Mzyxk"
+defaults[tgbot_token]="6803720056:AAFvw-VzJND6k-vYGnuq5DcQzQQz2w7IMbk"
 defaults[tgbot_admins]="Inosuke_Himeno"
 
 config_items=(
